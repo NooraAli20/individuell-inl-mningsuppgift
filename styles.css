@@ -1,0 +1,37 @@
+:root{
+    --black:#00000;
+    --white:#fffff;
+
+}
+body{
+    background-color: white;
+    max-width: 1440px;
+}
+h1{
+    background-color:var(--white);
+    color: var(--black);
+    text-align: left;
+}
+h2,h3{
+    background-color: var(--black);
+    color: var(--white);
+}
+.header top-deco{
+    display: grid;
+    
+}
+.header, .h-top{
+    text-align: center;
+
+}
+
+.hero-txt{
+    display: grid;
+    text-align: auto;
+    justify-content: normal;
+    padding-left: 20rem;
+}
+.animal-container, .nature-container,.more-container > button{
+    background-color: black;
+    color: white;
+}
