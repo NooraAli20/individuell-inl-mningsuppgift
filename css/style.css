@@ -1,8 +1,79 @@
 :root{
-    
+    --max-width: 1440px;
 }
 body {
     background-color:black;
-    
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    color: white;
+}
 
+body > header {
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+    
+}
+.h-top {
+    background-color: white;
+    color: black;
+}
+.h-top h1{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.h-top p{
+    text-align: center;
+    padding-left:3rem;
+    padding-right: 1rem;
+}
+.top-deco{
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.hero-txt {
+    height: 80vh;
+    background-size: 400px;
+    background-position: center 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: var(--maxWidth);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+}
+.animal-container{
+margin-top: -13rem;
+}
+
+.top-deco img, footer img{
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.animal-container img, .nature-container img, .more-container img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: top;
+    
+}
+
+.btn-bottom {
+    width: 50%;
+    align-items: center;
+    background-color: white;
 }
