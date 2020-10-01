@@ -8,13 +8,13 @@ body {
     color: white;
 }
 
-body > header {
-    height: 4rem;
-    position: fixed;
-    width: 100%;
-    
+header {
+    height: 6rem;
+    position: absolute;
+    max-width: var(--maxWidth);
 }
-.h-top {
+
+.h-top,.Big-txt {
     background-color: white;
     color: black;
 }
@@ -22,58 +22,55 @@ body > header {
     text-align: left;
     font-size: 1rem;
     font-weight: bold;
-}
-.h-top p{
-    text-align: center;
-    padding-left:3rem;
-    padding-right: 1rem;
-}
-.top-deco{
-    max-width: var(--maxWidth);
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.hero-txt {
-    height: 80vh;
+    height: 70vh;
     background-size: 400px;
     background-position: center 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.hero-txt p{
+    text-align: center;
+    padding-left:3rem;
+    padding-right: 1rem;
+}  
 
-main {
+main{
     max-width: var(--maxWidth);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 0 auto;
 }
-.animal-container{
-margin-top: -13rem;
-}
+
+
 
 .top-deco img, footer img{
     max-width: var(--maxWidth);
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background-size: 400px;
+    background-position: center 40vh;
 }
 
-.animal-container img, .nature-container img, .more-container img{
+.animal-container img, .nature-container img, .more-container img, .elephants img{
+    
+    display:flex;
     width: 100%;
     height: 20rem;
     object-fit: cover;
     object-position: top;
+    background-size: 400px;
+    background-position: center 40vh;
     
 }
 
-.btn-bottom {
-    width: 50%;
+.btn-bottom figure img{
+    width: 100%;
     align-items: center;
+    justify-items: center;
     background-color: white;
+    height: 15rem;
+    
 }
