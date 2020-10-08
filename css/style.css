@@ -1,0 +1,76 @@
+:root{
+    --max-width: 1440px;
+}
+body {
+    background-color:black;
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    color: white;
+}
+
+header {
+    height: 6rem;
+    position: absolute;
+    max-width: var(--maxWidth);
+}
+
+.h-top,.Big-txt {
+    background-color: white;
+    color: black;
+}
+.h-top h1{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 70vh;
+    background-size: 400px;
+    background-position: center 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-txt p{
+    text-align: center;
+    padding-left:3rem;
+    padding-right: 1rem;
+}  
+
+main{
+    max-width: var(--maxWidth);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+}
+
+
+
+.top-deco img, footer img{
+    max-width: var(--maxWidth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-size: 400px;
+    background-position: center 40vh;
+}
+
+.animal-container img, .nature-container img, .more-container img, .elephants img{
+    
+    display:flex;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: top;
+    background-size: 400px;
+    background-position: center 40vh;
+    
+}
+
+.btn-bottom figure img{
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    height: 15rem;
+    
+}
